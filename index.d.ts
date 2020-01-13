@@ -8,6 +8,6 @@
  * //=> 'C:\\Program Files\\Windows Defender\\MpCmdRun.exe'
  * ```
 */
-declare const defenderPath: string
+declare const defenderPath: string | null
 
 export = defenderPath
