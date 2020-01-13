@@ -1,13 +1,8 @@
 import test from "ava"
-import theModule from "."
+import is from "@sindresorhus/is"
+import defenderPath from "."
 
 test("main", (t) => {
-	t.throws(() => {
-		theModule(123)
-	}, {
-		instanceOf: TypeError,
-		message: "Expected a string, got number",
-	})
-
-	t.is(theModule("unicorns"), "unicorns & rainbows")
+	if (process.platform === "win32") t.true(is.string(defenderPath))
+	else t.true(is.null(defenderPath))
 })

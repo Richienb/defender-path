@@ -1,14 +1,13 @@
 /**
- * My awesome module.
- * @param input Lorem ipsum.
- * @param postfix Lorem ipsum.
+ * The path of the Windows Defender CLI binary.
  * @example
  * ```
- * const theModule = require("the-module");
- * theModule("unicorns");
- * //=> 'unicorns & rainbows'
+ * const defenderPath = require("defender-path");
+ *
+ * defenderPath;
+ * //=> 'C:\\Program Files\\Windows Defender\\MpCmdRun.exe'
  * ```
 */
-declare function theModule(input: string, { postfix }: { postfix?: string }): string;
+declare const defenderPath: string
 
-export = theModule;
+export = defenderPath

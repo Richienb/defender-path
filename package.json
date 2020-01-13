@@ -1,33 +1,45 @@
 {
-    "name": "the-module",
-    "version": "0.0.0",
-    "description": "My awesome module.",
-    "repository": "https://github.com/Richienb/the-module.git",
-    "author": "Richie Bendall <richiebendall@gmail.com>",
-    "license": "MIT",
-    "main": "index.js",
-    "files": [
-        "index.js",
-        "index.d.ts"
-    ],
-    "engines": {
-        "node": ">=8"
-    },
-    "scripts": {
-        "lint": "xo",
-        "test": "yarn lint && ava"
-    },
-    "keywords": [],
-    "dependencies": {},
-    "devDependencies": {
-        "ava": "^2.4.0",
-        "eslint-config-richienb": "^0.3.0",
-        "xo": "^0.25.3"
-    },
-    "resolutions": {
-        "eslint": "^6.8.0"
-    },
-    "xo": {
-        "extends": "richienb/node"
-    }
+	"name": "defender-path",
+	"version": "0.0.0",
+	"description": "Gets the current path of the Windows Defender CLI binary.",
+	"repository": "https://github.com/Richienb/defender-path.git",
+	"author": "Richie Bendall <richiebendall@gmail.com>",
+	"license": "MIT",
+	"main": "index.js",
+	"files": [
+		"index.js",
+		"index.d.ts"
+	],
+	"engines": {
+		"node": ">=4"
+	},
+	"scripts": {
+		"lint": "xo",
+		"test": "yarn lint && ava"
+	},
+	"keywords": [
+		"windows",
+		"defender",
+		"cli",
+		"binary",
+		"microsoft",
+		"path",
+		"os",
+		"platform",
+		"scan",
+		"dir"
+	],
+	"dependencies": {},
+	"devDependencies": {
+		"@sindresorhus/is": "^1.2.0",
+		"ava": "^2.4.0",
+		"eslint-config-richienb": "^0.3.0",
+		"xo": "^0.25.3"
+	},
+	"resolutions": {
+		"eslint": "^6.8.0"
+	},
+	"xo": {
+		"extends": "richienb/node"
+	}
 }

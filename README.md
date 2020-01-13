@@ -1,41 +1,28 @@
-# The module [![Travis CI Build Status](https://img.shields.io/travis/com/Richienb/the-module/master.svg?style=for-the-badge)](https://travis-ci.com/Richienb/the-module)
+# Defender Path [![Travis CI Build Status](https://img.shields.io/travis/com/Richienb/defender-path/master.svg?style=for-the-badge)](https://travis-ci.com/Richienb/defender-path)
 
-My awesome module.
+Gets the current path of the Windows Defender CLI binary.
 
-[![NPM Badge](https://nodei.co/npm/the-module.png)](https://npmjs.com/package/the-module)
+[![NPM Badge](https://nodei.co/npm/defender-path.png)](https://npmjs.com/package/defender-path)
 
 ## Install
 
 ```sh
-npm install the-module
+npm install defender-path
 ```
 
 ## Usage
 
 ```js
-const theModule = require("the-module");
+const defenderPath = require("defender-path");
 
-theModule("unicorns");
-//=> 'unicorns & rainbows'
+defenderPath;
+//=> 'C:\\Program Files\\Windows Defender\\MpCmdRun.exe'
 ```
 
 ## API
 
-### theModule(input, options?)
-
-#### input
+### defenderPath
 
 Type: `string`
 
-Lorem ipsum.
-
-#### options
-
-Type: `object`
-
-##### postfix
-
-Type: `string`\
-Default: `rainbows`
-
-Lorem ipsum.
+The path of the Windows Defender CLI binary.
