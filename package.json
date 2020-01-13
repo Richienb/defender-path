@@ -1,6 +1,6 @@
 {
 	"name": "defender-path",
-	"version": "0.0.0",
+	"version": "1.0.0",
 	"description": "Gets the current path of the Windows Defender CLI binary.",
 	"repository": "https://github.com/Richienb/defender-path.git",
 	"author": "Richie Bendall <richiebendall@gmail.com>",
